@@ -1,0 +1,298 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    background-position: fixed;
+    
+}
+*{
+    color: white;
+}
+.homePageWrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editorWrap {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px 10px 20px 20px;
+}
+select {
+    color: white !important;
+}
+
+.theme-selector {
+    color: white !important;
+}
+
+select option {
+    color: white;
+}
+select {
+    color: white !important;
+    background-color: #333 !important;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+select option {
+    color: white !important;
+    background-color: #333 !important;
+}
+
+select option:hover {
+    background-color: #444 !important;
+}
+.CodeMirror {
+    background-color: #2e2e2e !important;
+  }
+  
+  .CodeMirror-scroll {
+    background-color: #2e2e2e !important;
+  }
+  
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    animation: fadeUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.homePageLogo {
+    width: 100px;
+}
+
+.mainLabel {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #3498db;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.createNewBtn,
+.joinBtn,
+.leaveBtn,
+.btn {
+    color: #fff;
+    background: #00c8ff;
+    transition: all 0.3s ease;
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.createNewBtn::before,
+.joinBtn::before,
+.leaveBtn::before,
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 200, 255, 0.4), transparent 70%);
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.createNewBtn:hover::before,
+.joinBtn:hover::before,
+.leaveBtn:hover::before,
+.btn:hover::before {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: blur(4px);
+}
+
+.createNewBtn:hover,
+.joinBtn:hover,
+.leaveBtn:hover,
+.btn:hover {
+    background: #00b4e6;
+    box-shadow: 0 0 15px #00c8ff, 0 0 30px #00c8ff;
+    transform: translateY(-2px);
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #555;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.mainWrap {
+    margin-top: 30px;
+    margin-right: 30px;
+    animation: fadeUp 1s ease-in-out forwards;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.aside {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 16px;
+    padding-bottom: 15px;
+    color: #333;
+    margin-right: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.asideInner {
+    margin-bottom: 410px;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.client:hover {
+    transform: translateY(-10px);
+}
+
+.userName {
+    margin-top: 10px;
+}
+
+.logo {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.logoImage {
+    height: 60px;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.CodeMirror {
+    width: 95%;
+    min-height: 500px;
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.142) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.CodeMirror-gutter,
+.CodeMirror-linenumbers {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+select {
+    margin-bottom: 10px;
+    display: block;
+    appearance: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: 0.5s;
+}
+
+select:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.244), rgba(255, 255, 255, 0.152));
+}
+
+label {
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
