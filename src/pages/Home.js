@@ -100,7 +100,7 @@ const Home = () => {
             </div>
             <footer>
                 <h4>
-                    Built with ❤️ by Torneighdo
+                    Built By Aman Pushp & Sagar Rajak
                 </h4>
             </footer>
         </div>

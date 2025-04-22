@@ -22,7 +22,3 @@ Colaburl is a glassmorphism real-time collaborative code editor that allows mult
 2. Install the dependencies with `npm install`.
 3. Start the server with `npm start`.
 4. Open `localhost:3000` in your browser.
-
-## Contributing
-
-Contributions are always welcome! Please feel free to submit a pull request or open an issue if you find any bugs.
